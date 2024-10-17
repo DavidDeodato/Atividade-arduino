@@ -12,7 +12,7 @@ Conforme solicitado na atividade 1, o código foi desenvolvido para acionar o LE
 Para ver o vídeo consulte [este link](https://youtube.com/shorts/Ly-zNU17j2g?si=9vx52OHsodNeXUFh).
 
 
-## Código
+## Código:
 
 
 
