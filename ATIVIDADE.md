@@ -50,7 +50,26 @@ Para ver o vídeo da parte 2 consulte [este link](https://youtu.be/eKTTlFmrmZs?s
 Este código permite controlar um LED com um botão, utilizando o resistor pull-up interno do Arduino. No setup, o pino 11 é configurado como saída para o LED, enquanto o pino 12 é configurado como entrada com INPUT_PULLUP, garantindo que ele permaneça em estado alto (HIGH) quando o botão não estiver pressionado. No loop principal, o código monitora o estado do botão. Quando o botão é pressionado (estado LOW), o LED acende. Caso contrário, o LED permanece desligado. Isso demonstra como controlar dispositivos simples com o uso de botões e resistores pull-up internos.
 
 
+## Código:
 
 
+```c++
 
 
+void setup() {
+ 
+  pinMode(11, OUTPUT);
+  
+  pinMode(12, INPUT_PULLUP);
+}
+
+void loop() {
+	if (digitalRead(12) == LOW)
+    {
+    digitalWrite(11, HIGH);
+    } else 
+    {
+    digitalWrite(11, LOW);
+    }
+}
+```
